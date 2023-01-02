@@ -1,6 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/navigation">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/frag1">
 
+    <fragment
+        android:id="@+id/frag1"
+        android:name="com.example.healer.ui.on_boarding.Frag1"
+        android:label="fragment_frag1"
+        tools:layout="@layout/fragment_frag1" >
+        <action
+            android:id="@+id/action_frag1_to_frag2"
+            app:destination="@id/frag2" />
+        <action
+            android:id="@+id/action_frag1_to_home2"
+            app:destination="@id/home2" />
+    </fragment>
+    <fragment
+        android:id="@+id/frag2"
+        android:name="com.example.healer.ui.on_boarding.Frag2"
+        android:label="fragment_frag2"
+        tools:layout="@layout/fragment_frag2" >
+        <action
+            android:id="@+id/action_frag2_to_frag3"
+            app:destination="@id/frag3" />
+    </fragment>
+    <fragment
+        android:id="@+id/frag3"
+        android:name="com.example.healer.ui.on_boarding.Frag3"
+        android:label="fragment_frag3"
+        tools:layout="@layout/fragment_frag3" >
+        <action
+            android:id="@+id/action_frag3_to_frag4"
+            app:destination="@id/frag4" />
+    </fragment>
+    <fragment
+        android:id="@+id/frag4"
+        android:name="com.example.healer.ui.on_boarding.Frag4"
+        android:label="fragment_frag4"
+        tools:layout="@layout/fragment_frag4" >
+        <action
+            android:id="@+id/action_frag4_to_choice"
+            app:destination="@id/choice" />
+    </fragment>
+    <fragment
+        android:id="@+id/choice"
+        android:name="com.example.healer.ui.login.choice"
+        android:label="fragment_choice"
+        tools:layout="@layout/fragment_choice" >
+        <action
+            android:id="@+id/action_choice_to_info1"
+            app:destination="@id/info1" />
+        <action
+            android:id="@+id/action_choice_to_home2"
+            app:destination="@id/home2" />
+    </fragment>
+    <fragment
+        android:id="@+id/info1"
+        android:name="com.example.healer.ui.login.info1"
+        android:label="fragment_info1"
+        tools:layout="@layout/fragment_info1" >
+        <action
+            android:id="@+id/action_info1_to_info2"
+            app:destination="@id/info2" />
+    </fragment>
+    <fragment
+        android:id="@+id/info2"
+        android:name="com.example.healer.ui.login.info2"
+        android:label="fragment_info2"
+        tools:layout="@layout/fragment_info2" >
+        <action
+            android:id="@+id/action_info2_to_home2"
+            app:destination="@id/home2" />
+    </fragment>
+    <fragment
+        android:id="@+id/home2"
+        android:name="com.example.healer.ui.home.home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home2_to_edit_profile"
+            app:destination="@id/edit_profile" />
+    </fragment>
+    <fragment
+        android:id="@+id/edit_profile"
+        android:name="com.example.healer.ui.profile.edit_profile"
+        android:label="fragment_edit_profile"
+        tools:layout="@layout/fragment_edit_profile" />
 </navigation>

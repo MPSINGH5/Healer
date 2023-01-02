@@ -2,7 +2,6 @@ plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
     id 'kotlin-android'
-    id 'kotlin-android-extensions'
     id  'kotlin-kapt'
     id "androidx.navigation.safeargs.kotlin"
     id 'com.google.gms.google-services'
@@ -15,13 +14,19 @@ android {
 
     defaultConfig {
         applicationId "com.example.healer"
-        minSdk 27
+        minSdk 28
         targetSdk 33
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables {
+            useSupportLibrary true
+        }
     }
-
+    buildFeatures{
+        viewBinding=true
+        compose true
+    }
     buildTypes {
         release {
             minifyEnabled false
@@ -35,15 +40,22 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    composeOptions {
+        kotlinCompilerExtensionVersion '1.1.1'
+    }
+    packagingOptions {
+        resources {
+            excludes += '/META-INF/{AL2.0,LGPL2.1}'
+        }
+    }
 }
 
 dependencies {
 
     implementation 'com.google.firebase:firebase-messaging-ktx:23.1.1'
     implementation 'com.google.firebase:firebase-analytics-ktx:21.2.0'
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.5.1'
     kapt "androidx.room:room-compiler:2.4.3"
-
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.7.20"
     implementation 'androidx.core:core-ktx:1.9.0'
     implementation 'androidx.appcompat:appcompat:1.5.1'
     implementation 'com.google.android.material:material:1.7.0'
