@@ -31,9 +31,51 @@
         android:id="@+id/text_line"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
         android:background="@drawable/text_onboard"
+        app:layout_constraintBottom_toTopOf="@+id/next_button"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Rectangle" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/next_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_next"
+        android:clickable="true"
+        android:contentDescription="Next"
+        android:contextClickable="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_line"
+        tools:ignore="ImageContrastCheck" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:background="@drawable/next"
+        android:clickable="false"
+        android:contextClickable="false"
+        app:layout_constraintBottom_toBottomOf="@id/next_button"
+        app:layout_constraintStart_toStartOf="@id/next_button"
+        app:layout_constraintTop_toTopOf="@+id/next_button"
+        tools:ignore="ImageContrastCheck" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/arrow"
+        android:clickable="false"
+        android:contextClickable="false"
+        app:layout_constraintBottom_toBottomOf="@id/next_button"
+        app:layout_constraintEnd_toEndOf="@+id/next_button"
+        app:layout_constraintTop_toTopOf="@id/next_button"
+        tools:ignore="ImageContrastCheck" />
 </androidx.constraintlayout.widget.ConstraintLayout>
