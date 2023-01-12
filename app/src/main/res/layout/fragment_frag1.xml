@@ -117,17 +117,158 @@
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/heart1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="15dp"
         android:layout_marginEnd="15dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="24dp"
 
         android:background="@drawable/heart"
         android:clickable="false"
         android:contextClickable="false"
         app:layout_constraintBottom_toBottomOf="@+id/Rectangle"
         app:layout_constraintEnd_toStartOf="@+id/ellipse3"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="@+id/ellipse1"
+        tools:ignore="ImageContrastCheck" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/plus1"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginBottom="80dp"
+
+        android:background="@drawable/plus"
+        android:clickable="false"
+        android:contextClickable="false"
+        app:layout_constraintBottom_toBottomOf="@+id/Rectangle"
+        app:layout_constraintStart_toStartOf="@+id/ellipse1"
+        tools:ignore="ImageContrastCheck" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/saline1"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginBottom="116dp"
+
+        android:background="@drawable/saline"
+        android:clickable="false"
+        android:contextClickable="false"
+        app:layout_constraintBottom_toBottomOf="@+id/Rectangle"
+        app:layout_constraintStart_toStartOf="@+id/ellipse1"
+        tools:ignore="ImageContrastCheck" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/anti1"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="100dp"
+
+        android:layout_marginBottom="116dp"
+        android:background="@drawable/antibiotic"
+        android:clickable="false"
+        android:contextClickable="false"
+        app:layout_constraintBottom_toBottomOf="@+id/Rectangle"
+        app:layout_constraintEnd_toEndOf="@+id/ellipse1"
+        tools:ignore="ImageContrastCheck" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/heart2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="240dp"
+        android:layout_marginBottom="80dp"
+
+        android:background="@drawable/heart"
+        android:clickable="false"
+        android:contextClickable="false"
+        app:layout_constraintBottom_toBottomOf="@+id/Rectangle"
+        app:layout_constraintStart_toStartOf="@+id/ellipse1"
+        tools:ignore="ImageContrastCheck" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/saline2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="272dp"
+        android:layout_marginBottom="24dp"
+
+        android:background="@drawable/saline"
+        android:clickable="false"
+        android:contextClickable="false"
+        app:layout_constraintBottom_toBottomOf="@+id/Rectangle"
+        app:layout_constraintStart_toStartOf="@+id/ellipse1"
+        tools:ignore="ImageContrastCheck" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/anti2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="236dp"
+
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/antibiotic"
+        android:clickable="false"
+        android:contextClickable="false"
+        app:layout_constraintBottom_toBottomOf="@+id/Rectangle"
+        app:layout_constraintEnd_toEndOf="@+id/ellipse1"
+        tools:ignore="ImageContrastCheck" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/heart3"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginBottom="60dp"
+
+        android:background="@drawable/heart"
+        android:clickable="false"
+        android:contextClickable="false"
+        app:layout_constraintBottom_toBottomOf="@+id/Rectangle"
+        app:layout_constraintStart_toStartOf="@+id/ellipse1"
+        tools:ignore="ImageContrastCheck" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/anti3"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="148dp"
+
+        android:layout_marginBottom="86dp"
+        android:background="@drawable/antibiotic"
+        android:clickable="false"
+        android:contextClickable="false"
+        app:layout_constraintBottom_toBottomOf="@+id/Rectangle"
+        app:layout_constraintEnd_toEndOf="@+id/ellipse1"
+        tools:ignore="ImageContrastCheck" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/saline3"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="204dp"
+        android:layout_marginBottom="64dp"
+
+        android:background="@drawable/saline"
+        android:clickable="false"
+        android:contextClickable="false"
+        app:layout_constraintBottom_toBottomOf="@+id/Rectangle"
+        app:layout_constraintStart_toStartOf="@+id/ellipse1"
+        tools:ignore="ImageContrastCheck" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/plus2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="240dp"
+        android:layout_marginBottom="12dp"
+
+        android:background="@drawable/plus"
+        android:clickable="false"
+        android:contextClickable="false"
+        app:layout_constraintBottom_toBottomOf="@+id/Rectangle"
         app:layout_constraintStart_toStartOf="@+id/ellipse1"
         tools:ignore="ImageContrastCheck" />
 </androidx.constraintlayout.widget.ConstraintLayout>
