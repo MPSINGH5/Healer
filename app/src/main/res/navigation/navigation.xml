@@ -24,26 +24,9 @@
         tools:layout="@layout/fragment_frag2" >
         <action
             android:id="@+id/action_frag2_to_frag3"
-            app:destination="@id/frag3" />
-    </fragment>
-    <fragment
-        android:id="@+id/frag3"
-        android:name="com.example.healer.ui.on_boarding.Frag3"
-        android:label="fragment_frag3"
-        tools:layout="@layout/fragment_frag3" >
-        <action
-            android:id="@+id/action_frag3_to_frag4"
-            app:destination="@id/frag4" />
-    </fragment>
-    <fragment
-        android:id="@+id/frag4"
-        android:name="com.example.healer.ui.on_boarding.Frag4"
-        android:label="fragment_frag4"
-        tools:layout="@layout/fragment_frag4" >
-        <action
-            android:id="@+id/action_frag4_to_choice"
             app:destination="@id/choice" />
     </fragment>
+
     <fragment
         android:id="@+id/choice"
         android:name="com.example.healer.ui.login.choice"
