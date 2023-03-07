@@ -58,6 +58,9 @@
         <action
             android:id="@+id/action_info2_to_home2"
             app:destination="@id/home2" />
+        <action
+            android:id="@+id/action_info2_to_info3"
+            app:destination="@id/info3" />
     </fragment>
     <fragment
         android:id="@+id/home2"
@@ -73,4 +76,13 @@
         android:name="com.example.healer.ui.profile.edit_profile"
         android:label="fragment_edit_profile"
         tools:layout="@layout/fragment_edit_profile" />
+    <fragment
+        android:id="@+id/info3"
+        android:name="com.example.healer.ui.login.info3"
+        android:label="fragment_info3"
+        tools:layout="@layout/fragment_info3" >
+        <action
+            android:id="@+id/action_info3_to_home2"
+            app:destination="@id/home2" />
+    </fragment>
 </navigation>
